@@ -1,0 +1,8 @@
+a=input('enter a string:')
+length=len(a)
+count=0
+for i in range(length):
+    if (a[i].isalpha()):
+       count=count+1
+print(count)
+     
