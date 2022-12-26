@@ -1,0 +1,12 @@
+#Write a program to print given number is prime or not.
+num=int(input('enter a number:'))
+fact=1
+count=0
+for i in range(num):
+    if num%fact==0:
+        count=count+1
+    fact=fact+1
+if count==2:
+    print('it is a prime number')
+else:
+    print('it is not a prime number')
