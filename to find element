@@ -1,0 +1,8 @@
+n=int(input('enter length:'))
+l=list(map(int,input().split()))
+num=int(input())
+for i in l:
+    if l[i]==num:
+        print('element is found at index',i)
+else:
+    print('element is not found')
