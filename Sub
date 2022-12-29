@@ -1,0 +1,15 @@
+
+def addOne(self,a, n):
+        if(a[n-1]!=9):
+            a[n-1]=a[n-1]+1
+            return a          
+        s=''
+        for i in a:
+            s=s+str(i)
+        res=int(s)
+        res=res+1
+        res=str(res)
+        l=[]
+        for i in res:
+            l.append(i)
+        return l
