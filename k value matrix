@@ -1,0 +1,31 @@
+'''write a program to print k values in secondary digonal of the given n*n matrix
+    and replace the other values with 0
+    5 0 0 
+    0 5 0 
+    0 0 5
+'''
+n=int(input('enter size of matrix:'))
+m=[]
+c=[]
+for i in range(n):
+    l=[]
+    for j in range(n):
+        x=int(input('enter element in to matrix:'))
+        l.append(x)
+    m.append(l)
+print(m)
+k=int(input('enter k value:'))
+for i in range(n):
+    d=[]
+    for j in range(n):
+        if i+j==(n-1):
+            m[i][j]=k 
+            d.append(m[i][j])
+        else:
+            m[i][j]=0
+            d.append(m[i][j])
+    c.append(d) 
+print(c)
+for g in c:
+    print(g)
+            
