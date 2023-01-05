@@ -1,0 +1,27 @@
+#write a program to find maximum element from the primary and secondary diagonal.
+n=int(input())
+m=[]
+list=[]
+first=0
+last=n-1
+for i in range(n):
+    l=[]
+    for j in range(n):
+        x=int(input())
+        l.append(x)
+    m.append(l)
+print(m)
+for i in range(n):
+    for j in range(n):
+        if i==j:
+            list.append(m[i][j])
+        elif i+j==n-1:
+            list.append(m[i][j])
+print(list)
+for i in range(n-1):
+    if list[i]>list[i+1]:
+        temp=m[i]
+        list[i]=list[i+1]
+        list[i+1]=temp
+print(list[n-1])
+
