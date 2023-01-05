@@ -1,0 +1,23 @@
+# write a program to print sum of all row values of the matrix is equal to 2.
+   # if each row is equal to 2 then it is coder target matrix otherwise
+    #not a coder target matrix.
+n=int(input())
+m=[]
+list=[]
+for i in range(n):
+    l=[]
+    for j in range(n):
+        x=int(input())
+        l.append(x)
+    m.append(l)
+print(m)
+for i in range(n):
+    sum=0
+    for j in range(n):
+        sum=sum+m[i][j]
+    if sum!=2:
+        break
+if sum==2:
+    print('a coder target matrix')
+else:
+    print('not a coder target matrix')
