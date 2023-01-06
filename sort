@@ -1,0 +1,7 @@
+n=int(input('enter size of the list'))
+l=list(map(int,input().split()))
+k=int(input('enter k value:'))
+l.sort()
+m=l[-n:k]
+print(m)
+print(max(m)-min(m)
