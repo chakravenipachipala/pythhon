@@ -1,0 +1,7 @@
+print("Hello World")
+n=int(input('enter no of elements in the list:'))
+l=list(map(int,input().split()))
+for i in range(n):
+    print(l[i])
+    if l[i]%2 != 0:
+       l.pop(i)
