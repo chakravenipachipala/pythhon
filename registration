@@ -1,0 +1,10 @@
+email=input('enter ur mail:')
+n=int(input('size:'))
+phno=list(map(int,input('enter phno:').split()))
+f=phno[0]
+if f>5:
+    if len(phno)==10:
+        if email.endswith('@gmail.com'):
+            print('registration successfully')
+else:
+    print('check your details')
