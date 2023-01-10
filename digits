@@ -1,0 +1,13 @@
+'''  arrange digits in descending order in the given number
+'''
+n=input()
+l=[]
+for i in n:
+    l.append(int(i))
+l.sort()
+l.reverse()
+res=''
+for i in l:
+    res=res+str(i)
+print(res)
+    
