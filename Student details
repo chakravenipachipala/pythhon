@@ -1,0 +1,17 @@
+student = {}
+n = int(input())
+for i in range(n):
+    sno =int(input('enter sno:'))
+    sname = input('enter sname')
+    group = input('enter group')
+    clgbranch = input('enter clgbranch')
+    pno = int(input('enter pno'))
+    l=[]
+    l.append(sname)
+    l.append(group)
+    l.append(clgbranch)
+    l.append(pno)
+    student[sno] = l
+print(student) 
+z = int(input('enter sno for details'))
+print(student[z])
