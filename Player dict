@@ -1,0 +1,9 @@
+player = {}
+n = int(input())
+for i in range(n):
+    pno =int(input('enter pno'))
+    pname = input('enter pname')
+    player[pno] = pname
+print(player)
+z = int(input('enter pno for details'))
+print(player[z])
