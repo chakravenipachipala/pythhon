@@ -1,0 +1,18 @@
+n=list(map(int,input().split()))
+d={}
+for i in n:
+    if i not in d:
+       d[i] = 1
+    else:
+       d[i] = d[i]+1
+print(d)
+v=d.values()
+maximum = max(v)
+minimum = min(v)
+print(maximum-minimum)
+for i in d:
+    if i == maximum:
+       d1=d[i]
+    if i == minimum:
+       d2= d[i]
+print(d1,d2,(d1-d2))
