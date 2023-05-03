@@ -1,0 +1,11 @@
+para = input()
+d = {}
+for i in para:
+    if i not in d:
+        d[i] = 1
+    else:
+        d[i] = d[i] + 1
+x = input()
+for i in d:
+    if x == i:
+        print(d[x])
