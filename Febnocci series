@@ -1,0 +1,9 @@
+n1 = 0
+n2 = 1
+m = int( input())
+print(n1,n2,end =' ')
+for i in range(0,m+1):
+    s = n1+ n2
+    n1 = n2
+    n2 = s
+    print(s,end=' ')
