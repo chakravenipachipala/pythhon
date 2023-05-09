@@ -1,0 +1,13 @@
+#twin primes 5 19
+n = 5
+m = 19
+sieve=[1]*(m+1)
+sieve[0] = 0
+sieve[1] = 0
+for i in range(m+1):
+    if sieve[i] == 1:
+       for j in range(i*i,m+1,i):
+           sieve[j] = 0
+for i in range(n,m-1):
+    if sieve[i] == 1 and sieve[i+2] == 1:
+       print(i,i+2)
