@@ -1,0 +1,21 @@
+try:
+   import math
+   n = int(input())
+   m = 1000000
+   sieve = [1] * (m+1)
+   sieve[0] = sieve[1] = 0
+   x = int(math.sqrt(m))
+   for i in range(2,x+1): 
+     if sieve[i] == 1:
+        for j in range(i*i,m+1,i):
+            sieve[j] = 0
+   c = [0]*(m+1)
+   for i in range(2,m+1):
+     c[i] += c[i-1]
+     if sieve[i] == 1:
+        c[i] += 1   
+   for i in range(n):
+     a = int(input())
+     print(c[a])
+except:
+    print('')
