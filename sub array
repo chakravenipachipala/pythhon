@@ -1,0 +1,8 @@
+class Solution:
+    def maximumSumSubarray (self,k,arr,n):
+        winsum = sum(arr[:k])
+        maxsum = winsum
+        for i in range(n-k):
+            winsum=winsum-arr[i] + arr[i+k]
+            maxsum=max(maxsum,winsum)
+        return maxsum
