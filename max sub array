@@ -1,0 +1,10 @@
+class Solution:
+    def maximumSumSubarray (self,k,l,n):
+        maxx = l[0]
+        for i in range(0,n-(k-1)):
+            s = 0
+            for j in range(i,i+k):
+                s += l[j]
+            if maxx<s:
+                maxx=s
+        return maxx
