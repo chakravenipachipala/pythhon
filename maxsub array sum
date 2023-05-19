@@ -1,0 +1,17 @@
+       sum = 0
+       ans = 0
+       i, j = 0, 0
+       while j < n:
+           sum += arr[j]
+           if sum < k:
+               ans = max(ans, sum)
+               j += 1
+           elif sum == k:
+               return k
+           else:
+               while sum > k:
+                   sum -= arr[i]
+                   i += 1
+               ans = max(ans, sum)
+               j += 1
+       return ans
