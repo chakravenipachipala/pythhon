@@ -1,0 +1,13 @@
+ maxsum,s=-10**7,0
+        print(maxsum)
+        for i in arr:
+            s+=i   
+            print(s)
+            if maxsum<s:
+                
+                maxsum=s  
+                print(maxsum)
+            if s<0:
+                s=0
+        return maxsum
+            
